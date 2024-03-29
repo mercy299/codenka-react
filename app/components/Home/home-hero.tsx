@@ -5,8 +5,8 @@ import objects from "@/app/assets/img/objects.svg"
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="hero-section">
-      <div className="content">
+    <section className="hero-section py-12 px-20 gap-4 pb-44 bg-[#f7f9ff] flex flex-row max-w-100% justify-center mx-auto">
+      <div className="content max-w-6xl my-0 mx-auto flex flex-row">
         <div className="hero-section-text">
           <h1>Creative UI Kits <br />and Libraries</h1>
           <p>
@@ -32,25 +32,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       <style jsx>{`
-        .hero-section {
-          margin: auto;
-          justify-content: center;
-          max-width: 100%;
-          display: flex;
-          flex-direction: row;
-          padding: 3em 5em;
-          gap: 1em;
-          padding-bottom: 11em;
-          background-color: rgb(247, 249, 255);
-        }
-
-        .content {
-          max-width: 1200px;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: row;
-        }
-
+      
         .hero-section-text {
           flex: 25%;
         }
