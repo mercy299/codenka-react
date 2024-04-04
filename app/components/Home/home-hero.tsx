@@ -1,4 +1,3 @@
-"use client"
 import React from 'react';
 import Image from "next/image"
 import objects from "@/app/assets/img/objects.svg"
@@ -6,79 +5,71 @@ import objects from "@/app/assets/img/objects.svg"
 const HeroSection: React.FC = () => {
   return (
     <section className="hero-section py-12 px-20 gap-4 pb-44 bg-[#f7f9ff] flex flex-row max-w-100% justify-center mx-auto">
-      <div className="content max-w-6xl my-0 mx-auto flex flex-row">
-        <div className="hero-section-text">
-          <h1>Creative UI Kits <br />and Libraries</h1>
-          <p>
+      <div className="content max-w-6xl my-0 mx-auto w-auto flex flex-row">
+        <div className="hero-section-text w-1/2">
+          <h1 className="text-6xl tracking-wider leading-[80px] text-blue-900 font-bold mt-[120px]">Creative UI Kits <br />and Libraries</h1>
+          <p className="leading-[32px] text-gray-500">
             Explore more than 2,000 UI Kits and libraries with graphic assets and
             tools for developing websites and apps in niches ranging from gaming
             and dating to ecommerce and professional portfolios
           </p>
-          <form className="search">
+          <form className="search flex">
             <div className="input-search h-[20px] py-4 px-2 bg-[#f2f7fa] inline-flex rounded-lg">
-              <input className=""
+              <input className=" border-none w-[454px] outline-none bg-[#f2f7f]"
               type="search" 
               placeholder="Search..." />
             </div>
-            <button className="btn">Let's go</button>
+            <button className="btn text-white bg-[#034CBC] w-[150px] h-[68px] rounded-lg">Let's go</button>
           </form>
         </div>
-        <div className="hero-section-img" >
-        <Image 
+        <div className="hero-section-img " >
+        <Image className="img w-[6625px]"
          src={objects}
          alt="logo"
         />
         </div>
       </div>
 
-      <style jsx>{`
-      
-        .hero-section-text {
-          flex: 25%;
-        }
-
-        .hero-section-img {
-          flex: 75%;
-        }
+      {/* <style jsx>{`
 
         .hero-section-img img {
-          width: 625px;
+          // width: 625px;
         }
 
         .hero-section-text h1 {
-          font-size: 72px;
-          font-weight: 700;
-          margin: 120px 0 0 0;
-          color: rgb(2, 48, 89);
-          line-height: 80px;
-          letter-spacing: 3px;
+          // font-size: 72px;
+          // font-weight: 700;
+          // margin: 120px 0 0 0;
+          // color: rgb(2, 48, 89);
+          // line-height: 80px;
+          // letter-spacing: 3px;
         }
 
-        .hero-section-text p {
-          color: rgba(141, 144, 145, 1);
-          line-height: 32px;
-        }
+        // .hero-section-text p {
+        //   color: rgba(141, 144, 145, 1);
+        //   line-height: 32px;
+        // }
 
-        .search {
-          display: flex;
-        }
+        // .search {
+        //   display: flex;
+        // }
 
         .btn {
-          color: white;
-          background-color: rgba(3, 76, 188, 1);
-          width: 150px;
-          height: 68px;
-          border-radius: 12px;
-          border: none;
+          // color: white;
+          // background-color: rgba(3, 76, 188, 1);
+          // width: 150px;
+          // height: 68px;
+          // border-radius: 12px;
+          // border: none;
         }
 
-        input {
-          border: none;
-          width: 454px;
-          font-size: 19px;
-          outline: none;
-          background-color: #f2f7fa;
-        }
+        // input {
+        //   border: none;
+        //   width: 454px;
+        //   font-size: 19px;
+        //   outline: none;
+        //   background-color: #f2f7fa;
+        // }
 
         .fg {
           padding: 0.2em 1em;
@@ -146,7 +137,7 @@ const HeroSection: React.FC = () => {
             background-color: rgba(251, 251, 251, 1);
           }
         }
-      `}</style>
+      `}</style> */}
     </section>
   );
 }
